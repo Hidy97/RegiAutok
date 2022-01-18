@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+.ember{
+    width: 100%;
+    padding: 5px;
+    border: 1px;
+    border: rgba(211, 211, 211, 0.4);
+    border-style: solid;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.erdekessegek{
+    display: block;
+}
+
+aside img{
+    width: 100%;
+    padding: 5px;
+    border: 1px;
+    border: rgba(211, 211, 211, 0.4);
+    border-style: solid;
+}
+
+main{
+    display: grid;
+    grid-template-areas:    "h h h"
+                            "n n n"
+                            "r r s"
+                            "f f f";
+
+}
+
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: r;
+}
+aside{
+    grid-area: s;
+}
+footer{
+    grid-area: f;
+}
+
+main{
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    color: teal;
+}
+nav{
+    color: white;
+    background-color: teal;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+div{
+    border-style: solid;
+    border-color: rgba(211, 211, 211, 0.4);  
+}
+
+.bacsi{
+    background-color: rgba(211, 211, 211, 0.4);
+    color: teal;
+    font-weight: 100;
+}
+
+p{
+    text-align: justify;
+}
+
+.bacsifooter{
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+aside{
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    color: teal;
+}
+
+.wikiforras{
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        max-width: 600px;
+        width: 80%;
+        margin: auto;
+    }
+
+    li{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    main{
+        max-width: 400px;
+        width: 80%;
+        margin: auto;
+    }
+
+    li{
+        display: block;
+        text-align: center;
+    }
+    
+}
